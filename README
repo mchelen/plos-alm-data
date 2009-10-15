@@ -1,5 +1,25 @@
+source
+    original data
 
+    xls
+        from http://www.plos.org/downloads/plos-alm.zip
 
-.xls is from http://www.plos.org/downloads/plos-alm.zip
+converted
+    basic format converserions
 
-converted to .csv with open office 3.0.1
+    csv
+        converted to .csv with open office 3.0.1
+
+modified
+    these files have been modified from the converted originals
+    
+    csv
+        plos-alm.summary.alm.data.columns.1.to.9.csv
+            first 9 columns of plos-alm.summary.alm.data.columns.csv
+
+        plos-alm.summary.alm.data.no.asterisks.csv
+            all asterisks removed with:
+            sed 's/\*//g' plos-alm.summary.alm.data.csv > plos-alm.summary.alm.data.no.asterisks.csv
+
+        plos-alm.summary.alm.data.total.citations.more.than.zero.csv
+            filter out all rows without any citations (done in open office)
