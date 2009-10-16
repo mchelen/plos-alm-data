@@ -3,23 +3,27 @@ source
 
     xls
         from http://www.plos.org/downloads/plos-alm.zip
-
+        
 converted
     basic format converserions
 
     csv
         converted to .csv with open office 3.0.1
+        tables: summary.alm.data
+
 
 modified
     these files have been modified from the converted originals
     
     csv
-        plos-alm.summary.alm.data.columns.1.to.9.csv
+        columns.1.to.9
             first 9 columns of plos-alm.summary.alm.data.columns.csv
 
-        plos-alm.summary.alm.data.no.asterisks.csv
+        no.asterisks
             all asterisks removed with:
             sed 's/\*//g' plos-alm.summary.alm.data.csv > plos-alm.summary.alm.data.no.asterisks.csv
 
-        plos-alm.summary.alm.data.total.citations.more.than.zero.csv
-            filter out all rows without any citations (done in open office)
+        total.citations
+            add up citations (done in open office)
+        total.citations.more.than.zero
+            filter out all rows without any citations
