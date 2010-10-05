@@ -1,24 +1,11 @@
 original
     Data from http://www.plos.org/downloads/plos-alm.zip
-    Version: 2009.09.11
+    Version: 2010.05.18
         
 converted
-    Converted to .CSV with Open Office Calc 3.0.1
+    Converted to .CSV with Catdoc xls2csv
+      Used xls2csv.split.sheets.php from http://github.com/mchelen/plos-alm-tools
 
-modified
-    columns.1.to.9
-        first 9 columns of plos-alm.summary.alm.data.columns.csv
-
-    no.asterisks
-        all asterisks removed with:
-        sed 's/\*//g' plos-alm.summary.alm.data.csv > plos-alm.summary.alm.data.no.asterisks.csv
-        
-    total.citations
-        add up citations (done in open office)
-        
-    total.citations.more.than.zero
-        filter out all rows without any citations
-        
 contrib
     works and samples
     
